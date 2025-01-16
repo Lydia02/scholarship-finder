@@ -22,7 +22,7 @@ fastify.addHook("onClose", async (instance, done) => {
 
 export const startServer = async () => {
   try {
-    await fastify.listen({ port: process.env.PORT || 3004 });
+    await fastify.listen({ port: process.env.PORT || 3004, host: '0.0.0.0' });
     fastify.log.info(
       `Server running at http://localhost:${process.env.PORT || 3004}/`
     );
