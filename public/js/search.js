@@ -50,7 +50,7 @@ const loadScholarships = async (page = 1) => {
                       ? new Date(scholarship.deadline).toLocaleDateString()
                       : "N/A"
                   }<br />
-                  <strong>State:</strong> ${scholarship.state}<br />
+                  <strong>State:</strong> ${scholarship.state || "N/A"}<br />
                   <a href="${scholarship.website}" target="_blank">Learn more</a>
                 </p>
               </div>
