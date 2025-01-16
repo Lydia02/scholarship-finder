@@ -11,7 +11,7 @@ This platform leverages modern technologies like **Next.js**, **Fastify**, **Pri
 
 ## Deployed Application Links
 
-- **Frontend**: [Scholarship Finder Frontend](https://scholarship-finderr.netlify.app/#section_5) (hosted on Netlify)
+- **Frontend**: [Scholarship Finder Frontend](https://scholarship-finderr.netlify.app/) (hosted on Netlify)
 - **Backend**: [Scholarship Finder Backend](https://scholarship-finder-ha7y.onrender.com/) (hosted on Render)
 - **Database**: The database is built using PostgreSQL, hosted on Render.com, and integrated with Prisma ORM for efficient data management.
 
@@ -47,7 +47,7 @@ This platform leverages modern technologies like **Next.js**, **Fastify**, **Pri
 ### Steps to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repository-link.git
+   git clone [https://github.com/your-repository-link.git](https://github.com/Lydia02/scholarship-finder.git)
    cd scholarship-finder
    ```
 
@@ -80,7 +80,7 @@ This platform leverages modern technologies like **Next.js**, **Fastify**, **Pri
 
 ## Testing and Demonstration
 
-- **Frontend**: Visit the deployed frontend [here](https://scholarship-finderr.netlify.app/#section_5).
+- **Frontend**: Visit the deployed frontend [here](https://scholarship-finderr.netlify.app/).
 - **Backend**: Explore API routes with tools like Postman or directly interact through the frontend.
 - **Database**: Interact with real-time data managed through Prisma and hosted on Render.
 
@@ -90,8 +90,6 @@ This platform leverages modern technologies like **Next.js**, **Fastify**, **Pri
 - Enhance search filters with AI-based recommendations.
 
 ---
-
-Feel free to use this template to update your README further. Let me know if you'd like any additional sections or modifications!
 
 ## Key Features
 
@@ -172,7 +170,6 @@ scholarship-finder/
 - **Prisma**: Modern ORM for database interactions.
 - **PostgreSQL**: Relational database.
 - **JWT**: Secure authentication.
-- **Swagger**: API documentation.
 
 ### Frontend
 - **Next.js**: React-based framework for server-rendered and static websites.
@@ -180,59 +177,15 @@ scholarship-finder/
 - **Custom CSS and JS**: For additional styling and interactivity.
 
 ### Utilities
-- **Zod**: Schema validation.
 - **Nodemon**: Development utility for live reloads.
 
 ---
 
-## Setup Instructions
-
-### Prerequisites
-- **Node.js**
-- **PostgreSQL**
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/scholarship-finder.git
-   cd scholarship-finder
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Set up environment variables:
-   Create a `.env` file in the root directory and add the following:
-   ```plaintext
-   DATABASE_URL="postgresql://<username>:<password>@localhost:5432/scholarshipdb"
-   JWT_SECRET="your_secret_key"
-   ```
-
-4. Set up the database:
-   ```bash
-   npx prisma migrate dev --name init
-   ```
-
-5. Start the backend server:
-   ```bash
-   npm run dev
-   ```
-
-6. Start the frontend:
-   ```bash
-   npm run build && npm run start
-   ```
-
----
 
 ## Testing
 
 ### Backend
-Use **Postman** or **Swagger** to test API endpoints:
-- Authentication (`/auth`)
+Use **Postman**  to test API endpoints:
 - Scholarships (`/scholarships`)
 
 ### Testing the Backend with Postman
@@ -391,12 +344,9 @@ Follow these steps to test the backend API using **Postman**:
 
 ---
 
-## Future Enhancements
 
-- **Notification System**: Email/SMS notifications for users.
-- **Admin Dashboard**: A comprehensive dashboard for admins to manage scholarships and view analytics.
-- **Payment Gateway**: Integration with PayPal or Stripe for managing scholarship application fees.
-- **Internationalization**: Support multiple languages for a global audience.
+## Author
+ **Lydia Ojoawo**: [GitHub](https://github.com/Lydia02)  
 
 ---
 
