@@ -104,6 +104,25 @@ This platform leverages modern technologies like **Next.js**, **Fastify**, **Pri
 - **Error Handling**: Centralized error handling for consistent responses.
 - **Role-Based Access**: Admin and user roles for restricted access to certain features.
 
+- ---
+
+## Tools Used
+
+### Backend
+- **Fastify**: Lightweight and efficient Node.js framework.
+- **Prisma**: Modern ORM for database interactions.
+- **PostgreSQL**: Relational database.
+- **JWT**: Secure authentication.
+
+### Frontend
+- **Next.js**: React-based framework for server-rendered and static websites.
+- **Bootstrap**: Responsive design framework.
+- **Custom CSS and JS**: For additional styling and interactivity.
+
+### Utilities
+- **Nodemon**: Development utility for live reloads.
+
+
 ---
 
 ## File Structure
@@ -160,26 +179,6 @@ scholarship-finder/
 ├── README.md                         # Documentation
 └── .env                              # Environment variables
 ```
-
----
-
-## Tools Used
-
-### Backend
-- **Fastify**: Lightweight and efficient Node.js framework.
-- **Prisma**: Modern ORM for database interactions.
-- **PostgreSQL**: Relational database.
-- **JWT**: Secure authentication.
-
-### Frontend
-- **Next.js**: React-based framework for server-rendered and static websites.
-- **Bootstrap**: Responsive design framework.
-- **Custom CSS and JS**: For additional styling and interactivity.
-
-### Utilities
-- **Nodemon**: Development utility for live reloads.
-
----
 
 
 ## Testing
