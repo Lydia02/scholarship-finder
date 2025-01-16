@@ -6,7 +6,7 @@ import scholarshipRoutes from "./backend/api/scholarships/index.js";
 import cors from "cors";
 
 fastify.register(cors, {
-  origin: "http://localhost:3000", // Frontend URL
+  origin: "https://scholarship-finderr.netlify.app/", // Frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
   credentials: true, // Allow cookies and headers
 });

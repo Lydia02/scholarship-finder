@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: "/api/:path*", // Match any request starting with /api
-        destination: "http://localhost:3004/api/:path*", // Proxy to backend server
+        destination: "https://scholarship-finder-ha7y.onrender.com/api/:path*", // Proxy to backend server
       },
     ];
   },

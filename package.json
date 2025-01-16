@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "node config/seed.js"
+    "seed": "nodemon backend/config/seed.js"
   },
   "dependencies": {
     "@fastify/jwt": "^9.0.3",
