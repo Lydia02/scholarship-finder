@@ -135,7 +135,6 @@ scholarship-finder/
 │   │   ├── auth/
 │   │   │   └── signin.js             # Authentication routes
 │   │   ├── scholarships/
-│   │   │   ├── [scholarshipId].js    # Single scholarship routes
 │   │   │   └── index.js              # All scholarships routes
 │   ├── config/
 │   │   ├── seed.js                   # Database seeding script
@@ -157,11 +156,8 @@ scholarship-finder/
 │
 ├── frontend/
 │   ├── pages/
-│   │   ├── _app.js                   # Custom App component
-│   │   └── api/
-│   │       └── scholarships/         # API routes for scholarships
-│   │           ├── [scholarshipId].js
-│   │           └── index.js
+│   │   ├── _app.js
+│   │   └── index.js
 │   ├── public/
 │   │   ├── css/
 │   │   │   ├── bootstrap.min.css     # Bootstrap CSS
