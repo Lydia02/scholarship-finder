@@ -11,7 +11,7 @@ This platform leverages modern technologies like **Next.js**, **Fastify**, **Pri
 
 ## Deployed Application Links
 
-- **scholarship-finder Url**: [Scholarship Finder Frontend](https://scholarship-finderr.netlify.app/) 
+- **scholarship-finder Url**: [Scholarship Finder Url](https://scholarship-finderr.netlify.app/) 
 - **Frontend**: [Scholarship Finder Frontend](https://scholarship-finderr.netlify.app/) (hosted on Netlify)
 - **Backend**: [Scholarship Finder Backend](https://scholarship-finder-ha7y.onrender.com/) (hosted on Render)
 - **Database**: The database is built using PostgreSQL, hosted on Render.com, and integrated with Prisma ORM for efficient data management.
