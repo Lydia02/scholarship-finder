@@ -11,6 +11,7 @@ This platform leverages modern technologies like **Next.js**, **Fastify**, **Pri
 
 ## Deployed Application Links
 
+- **scholarship-finder Url**: [Scholarship Finder Url](https://scholarship-finderr.netlify.app/) 
 - **Frontend**: [Scholarship Finder Frontend](https://scholarship-finderr.netlify.app/) (hosted on Netlify)
 - **Backend**: [Scholarship Finder Backend](https://scholarship-finder-ha7y.onrender.com/) (hosted on Render)
 - **Database**: The database is built using PostgreSQL, hosted on Render.com, and integrated with Prisma ORM for efficient data management.
@@ -104,6 +105,25 @@ This platform leverages modern technologies like **Next.js**, **Fastify**, **Pri
 - **Error Handling**: Centralized error handling for consistent responses.
 - **Role-Based Access**: Admin and user roles for restricted access to certain features.
 
+- ---
+
+## Tools Used
+
+### Backend
+- **Fastify**: Lightweight and efficient Node.js framework.
+- **Prisma**: Modern ORM for database interactions.
+- **PostgreSQL**: Relational database.
+- **JWT**: Secure authentication.
+
+### Frontend
+- **Next.js**: React-based framework for server-rendered and static websites.
+- **Bootstrap**: Responsive design framework.
+- **Custom CSS and JS**: For additional styling and interactivity.
+
+### Utilities
+- **Nodemon**: Development utility for live reloads.
+
+
 ---
 
 ## File Structure
@@ -115,7 +135,6 @@ scholarship-finder/
 │   │   ├── auth/
 │   │   │   └── signin.js             # Authentication routes
 │   │   ├── scholarships/
-│   │   │   ├── [scholarshipId].js    # Single scholarship routes
 │   │   │   └── index.js              # All scholarships routes
 │   ├── config/
 │   │   ├── seed.js                   # Database seeding script
@@ -137,11 +156,8 @@ scholarship-finder/
 │
 ├── frontend/
 │   ├── pages/
-│   │   ├── _app.js                   # Custom App component
-│   │   └── api/
-│   │       └── scholarships/         # API routes for scholarships
-│   │           ├── [scholarshipId].js
-│   │           └── index.js
+│   │   ├── _app.js
+│   │   └── index.js
 │   ├── public/
 │   │   ├── css/
 │   │   │   ├── bootstrap.min.css     # Bootstrap CSS
@@ -160,26 +176,6 @@ scholarship-finder/
 ├── README.md                         # Documentation
 └── .env                              # Environment variables
 ```
-
----
-
-## Tools Used
-
-### Backend
-- **Fastify**: Lightweight and efficient Node.js framework.
-- **Prisma**: Modern ORM for database interactions.
-- **PostgreSQL**: Relational database.
-- **JWT**: Secure authentication.
-
-### Frontend
-- **Next.js**: React-based framework for server-rendered and static websites.
-- **Bootstrap**: Responsive design framework.
-- **Custom CSS and JS**: For additional styling and interactivity.
-
-### Utilities
-- **Nodemon**: Development utility for live reloads.
-
----
 
 
 ## Testing
