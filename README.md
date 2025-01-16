@@ -8,6 +8,91 @@ This platform leverages modern technologies like **Next.js**, **Fastify**, **Pri
 
 ---
 
+
+## Deployed Application Links
+
+- **Frontend**: [Scholarship Finder Frontend](https://scholarship-finderr.netlify.app/#section_5) (hosted on Netlify)
+- **Backend**: [Scholarship Finder Backend](https://scholarship-finder-ha7y.onrender.com/) (hosted on Render)
+- **Database**: The database is built using PostgreSQL, hosted on Render.com, and integrated with Prisma ORM for efficient data management.
+
+## System Architecture
+
+### High-Level Overview
+1. **Frontend**:
+   - Built with modern web technologies.
+   - Deployed on Netlify for speed and reliability.
+
+2. **Backend**:
+   - Fastify framework for building APIs.
+   - Prisma ORM for database management.
+
+3. **Database**:
+   - PostgreSQL hosted on Render.
+   - Prisma ensures seamless migrations and queries.
+
+### Technical Decisions
+- **Fastify**: Chosen for its speed and simplicity.
+- **Prisma**: Allows easy schema management and reduces boilerplate code.
+- **PostgreSQL**: Robust and reliable relational database.
+
+
+
+## Local Setup Instructions
+
+### Prerequisites
+- Node.js installed on your system.
+- PostgreSQL database set up locally or hosted online.
+- Git for version control.
+
+### Steps to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repository-link.git
+   cd scholarship-finder
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set up `.env` file:
+   ```plaintext
+   DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/<database>"
+   JWT_SECRET="your_jwt_secret"
+   PORT=3004
+   ```
+
+4. Run Prisma migrations to set up the database schema:
+   ```bash
+   npx prisma migrate dev --name init
+   ```
+
+5. Start the backend server:
+   ```bash
+   npm run server
+   ```
+
+6. Start the frontend server (if running locally):
+   ```bash
+   npm run dev
+   ```
+
+## Testing and Demonstration
+
+- **Frontend**: Visit the deployed frontend [here](https://scholarship-finderr.netlify.app/#section_5).
+- **Backend**: Explore API routes with tools like Postman or directly interact through the frontend.
+- **Database**: Interact with real-time data managed through Prisma and hosted on Render.
+
+## Future Enhancements
+- Add email notifications for scholarship updates.
+- Introduce user profiles for personalized experiences.
+- Enhance search filters with AI-based recommendations.
+
+---
+
+Feel free to use this template to update your README further. Let me know if you'd like any additional sections or modifications!
+
 ## Key Features
 
 ### Frontend
