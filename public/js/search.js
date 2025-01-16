@@ -42,7 +42,6 @@ const loadScholarships = async (page = 1) => {
               <div class="card-body">
                 <h5 class="card-title">${scholarship.name}</h5>
                 <p class="card-text">
-                  <strong>ID:</strong> ${scholarship.id}<br />
                   <strong>Type:</strong> ${scholarship.type || "N/A"}<br />
                   <strong>Degree Level:</strong> ${scholarship.degreeLevel || "N/A"}<br />
                   <strong>Eligibility:</strong> ${scholarship.eligibility || "N/A"}<br />
@@ -51,7 +50,7 @@ const loadScholarships = async (page = 1) => {
                       ? new Date(scholarship.deadline).toLocaleDateString()
                       : "N/A"
                   }<br />
-                  <strong>School ID:</strong> ${scholarship.schoolId || "N/A"}<br />
+                  <strong>State:</strong> ${scholarship.state"}<br />
                   <a href="${scholarship.website}" target="_blank">Learn more</a>
                 </p>
               </div>
