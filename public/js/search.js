@@ -42,18 +42,17 @@ const loadScholarships = async (page = 1) => {
               <div class="card-body">
                 <h5 class="card-title">${scholarship.name}</h5>
                 <p class="card-text">
-                  <strong>Degree Level:</strong> ${
-                    scholarship.degreeLevel
-                  }<br />
+                  <strong>ID:</strong> ${scholarship.id}<br />
+                  <strong>Type:</strong> ${scholarship.type || "N/A"}<br />
+                  <strong>Degree Level:</strong> ${scholarship.degreeLevel || "N/A"}<br />
+                  <strong>Eligibility:</strong> ${scholarship.eligibility || "N/A"}<br />
                   <strong>Deadline:</strong> ${
                     scholarship.deadline
                       ? new Date(scholarship.deadline).toLocaleDateString()
                       : "N/A"
                   }<br />
-                  <strong>State:</strong> ${scholarship.state || "N/A"}<br />
-                  <a href="${
-                    scholarship.website
-                  }" target="_blank">Learn more</a>
+                  <strong>School ID:</strong> ${scholarship.schoolId || "N/A"}<br />
+                  <a href="${scholarship.website}" target="_blank">Learn more</a>
                 </p>
               </div>
             </div>
@@ -61,6 +60,8 @@ const loadScholarships = async (page = 1) => {
         `;
         resultsContainer.innerHTML += scholarshipCard;
       });
+         
+             
       renderPagination(data.pagination.totalPages, page); // Render pagination controls
     } else {
       resultsContainer.innerHTML = "<p>No scholarships found.</p>";
