@@ -5,13 +5,13 @@ import {
   getScholarships,
   countScholarships,
   createScholarship,
-} from "../models/scholarshipModel";
-import { buildFilters, paginate } from "../utils/paginationAndFiltering";
+} from "../models/scholarshipModel.js";
+import { buildFilters, paginate } from "../utils/paginationAndFiltering.js";
 import {
   handleServerError,
   handleNotFoundError,
   handleBadRequestError,
-} from "../utils/error";
+} from "../utils/error.js";
 
 export const getScholarshipDetails = async (id) => {
   if (!id || isNaN(id)) {
@@ -67,6 +67,7 @@ export const getFilteredScholarships = async (query) => {
 
     const scholarships = await getScholarships(filters, skip, take);
     const total = await countScholarships(filters);
+    const totalPages = Math.ceil(total / limit); // Calculate total pages
 
     return {
       scholarships,
@@ -74,6 +75,7 @@ export const getFilteredScholarships = async (query) => {
         total,
         page: parseInt(page, 10),
         limit: parseInt(limit, 10),
+        totalPages,
       },
     };
   } catch (error) {

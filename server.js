@@ -1,27 +1,19 @@
-// server.js
-const fastify = require('fastify')();
-const next = require('next');
-const fastifyHttpProxy = require('fastify-http-proxy');
+import "dotenv/config";
+import { fastify, startServer, prisma } from "./fastify.js";
 
-const dev = process.env.NODE_ENV !== 'production';
-const app = next({ dev });
-const handle = app.getRequestHandler();
+import scholarshipRoutes from "./backend/api/scholarships/index.js";
 
-app.prepare().then(() => {
-  fastify.register(fastifyHttpProxy, {
-    upstream: 'http://localhost:3000', // The Next.js app will run on this port
-    prefix: '/api', // Proxy API routes to Fastify
-  });
+import cors from "cors";
 
-  fastify.get('*', (req, res) => {
-    return handle(req.raw, res.raw);
-  });
-
-  fastify.listen(3001, (err) => {
-    if (err) {
-      console.log(err);
-      process.exit(1);
-    }
-    console.log('Server running on http://localhost:3001');
-  });
+fastify.register(cors, {
+  origin: "http://localhost:3000", // Frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
+  credentials: true, // Allow cookies and headers
 });
+
+fastify.register(scholarshipRoutes);
+fastify.get("/", async (request, reply) => {
+  return { message: "Welcome to Scholarship Finder API" };
+});
+
+startServer();

@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { handleBadRequestError } from "../utils/error";
+import { handleBadRequestError } from "../utils/error.js";
 
 export async function authenticate(req, res) {
   const authHeader = req.headers.authorization;

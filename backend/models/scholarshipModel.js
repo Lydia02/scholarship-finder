@@ -3,7 +3,7 @@ import {
   handleServerError,
   handleNotFoundError,
   handleBadRequestError,
-} from "../utils/error";
+} from "../utils/error.js";
 
 const prisma = new PrismaClient();
 
