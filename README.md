@@ -126,7 +126,7 @@ scholarship-finder/
 │   │   └── scholarshipModel.js       # Prisma models and queries
 │   ├── plugins/
 │   │   ├── auth.js                   # Authentication plugin
-│   │   └── swagger.js                # Swagger documentation plugin
+│   │   
 │   ├── services/
 │   │   └── scholarshipService.js     # Service layer for business logic
 │   ├── utils/
